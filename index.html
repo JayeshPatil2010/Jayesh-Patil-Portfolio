@@ -1,52 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayesh Patil — Portfolio</title>
+  <meta name="description" content="Jayesh Patil — Mechanical Engineering & Computer Science student. CAD, robotics builds, and applied ML projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="profile-container">
-      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-      <h1>Your Name Here</h1>
-      <p class="tagline">Student | Developer | Creator</p>
+  <div class="sheet-frame"><span></span></div>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a href="#top" class="nav-mark">J<strong>·</strong>PATIL</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section class="card">
-      <h2>About Me</h2>
-      <p>Write a short summary about yourself here. Mention what you're passionate about, what you're currently learning, or what kinds of projects you enjoy making!</p>
-    </section>
+  <main id="top">
 
-    <section class="card">
-      <h2>My Projects</h2>
-      
-      <div class="project">
-        <h3>Project Title 1</h3>
-        <p>A brief description of your project. Talk about what tools or languages you used to build it.</p>
-        <img src="https://via.placeholder.com/600x300" alt="Project 1 Preview" class="project-img">
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow hero-label">Portfolio — Sheet 01</p>
+        <h1>Jayesh Patil<br /><span class="accent">builds things.</span></h1>
+        <p class="hero-role">Mechanical Engineering + Computer Science · Junior, Vernon Hills High School</p>
+        <p class="hero-desc">
+          I design and build — in CAD, in code, and everywhere the two meet. Recent
+          work spans an AI accessibility device, a data-driven soccer predictor, and
+          a string of competition-built vehicles and aircraft.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <!-- TODO: replace with your real resume PDF path once uploaded to /assets -->
+          <a class="btn btn-ghost" href="assets/Jayesh_Patil_Resume.pdf">Download Résumé</a>
+        </div>
+
+        <div class="stat-strip">
+          <div class="stat"><b>4.00</b><span>Unweighted GPA</span></div>
+          <div class="stat"><b>4+1</b><span>AP &amp; DC Courses</span></div>
+          <div class="stat"><b>60+</b><span>Volunteer Hours</span></div>
+          <div class="stat"><b>2028</b><span>Graduation</span></div>
+        </div>
       </div>
+    </header>
 
-      <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Another description of a project, assignment, or cool experiment you worked on.</p>
-        <img src="https://via.placeholder.com/600x300" alt="Project 2 Preview" class="project-img">
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" data-reveal>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>Where engineering meets code</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a junior at Vernon Hills High School, carrying a 4.00 unweighted GPA
+              through four AP courses and a dual-credit class. My work sits at the
+              intersection of mechanical design and software — I model and prototype
+              in CAD, then bring the same problem-solving into Java and Python.
+            </p>
+            <p>
+              Competitively, I build for Science Olympiad — flight, helicopter,
+              electric vehicle, and wheeled vehicle events — and I placed 2nd in a
+              school hackathon building VERA, an AI accessibility tool. Outside the
+              build table, I'm Vice President of hackVH, a member of Math Team, and a
+              brown belt in karate with four competition medals.
+            </p>
+            <p>
+              I'm looking toward mechanical engineering and computer science
+              internships where I can keep working on problems that need both a CAD
+              model and a codebase to solve.
+            </p>
+          </div>
+          <dl class="spec-table">
+            <div class="spec-row"><dt>Focus</dt><dd>Mechanical Eng. + CS</dd></div>
+            <div class="spec-row"><dt>School</dt><dd>Vernon Hills HS</dd></div>
+            <div class="spec-row"><dt>Class of</dt><dd>2028</dd></div>
+            <div class="spec-row"><dt>CAD</dt><dd>Onshape</dd></div>
+            <div class="spec-row"><dt>Languages</dt><dd>Java, Python</dd></div>
+            <div class="spec-row"><dt>Status</dt><dd>Open to internships</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Resume & Skills</h2>
-      <p><em>(We will fill this section in once you share your resume details!)</em></p>
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" data-reveal>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools &amp; capabilities</h2>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h4>Engineering &amp; CAD</h4>
+            <ul>
+              <li>Onshape (CAD modeling)</li>
+              <li>3D Printing — Bambu Lab A1</li>
+              <li>Mechanical design &amp; prototyping</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>Data analysis &amp; modeling</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Competition Builds</h4>
+            <ul>
+              <li>Flight &amp; helicopter events</li>
+              <li>Electric &amp; wheeled vehicle events</li>
+              <li>Science Olympiad, Math Team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- ============ PROJECTS (rendered by js/script.js from js/projects-data.js) ============ -->
+    <section class="section" id="projects" data-reveal>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="featured-list" id="featured-projects"></div>
+        <div class="grid-projects" id="grid-projects" style="margin-top: 1px;"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" data-reveal>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Experience &amp; Leadership</p>
+          <h2>What I've been doing</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="eyebrow">2026</p>
+            <h4>Vice President</h4>
+            <p class="org">hackVH</p>
+            <p>Helped organize and run the school's hackathon — coordinating logistics for participants and teams, and working with fellow officers to build an event schedule that supported teams building and presenting technical projects.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="eyebrow">Jul 2025 — Present</p>
+            <h4>Teen Tech Tutor</h4>
+            <p class="org">Aspen District Library</p>
+            <p>Volunteered 60+ hours providing one-on-one technology support to patrons of varying ages and technical skill levels — diagnosing and resolving issues from password resets to navigating online accounts and insurance claims.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="eyebrow">Ongoing</p>
+            <h4>Brown Belt, 4x Competition Medalist</h4>
+            <p class="org">Karate</p>
+            <p>Trained and competed at the brown belt level, earning four medals across karate competitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" data-reveal>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Education</p>
+          <h2>Vernon Hills High School</h2>
+        </div>
+        <dl class="spec-table" style="max-width: 520px;">
+          <div class="spec-row"><dt>Expected Graduation</dt><dd>2028</dd></div>
+          <div class="spec-row"><dt>GPA</dt><dd>4.00 / 4.00 (Unweighted)</dd></div>
+          <div class="spec-row"><dt>Coursework</dt><dd>4 AP Courses + 1 Dual Credit</dd></div>
+          <div class="spec-row"><dt>AP Computer Science A</dt><dd>Score: 5</dd></div>
+          <div class="spec-row"><dt>Activities</dt><dd>Science Olympiad, Math Team, hackVH, Karate</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" data-reveal style="border-bottom: none;">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk</h2>
+        </div>
+        <p style="max-width: 50ch;">
+          Open to mechanical engineering and computer science internship
+          opportunities. Reach out any of the ways below.
+        </p>
+        <!-- TODO: swap every placeholder below for your real links -->
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>Connect with me on <a href="https://github.com" target="_blank">GitHub</a></p>
+  <!-- ============ FOOTER / TITLE BLOCK ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="title-block">
+        <div class="title-block-top">
+          <span class="name">Jayesh Patil</span>
+          <span class="role">Mechanical Engineering + Computer Science</span>
+        </div>
+        <div class="title-block-grid">
+          <div><span>Sheet</span><strong>01 of 01</strong></div>
+          <div><span>Scale</span><strong>NTS</strong></div>
+          <div><span>Rev</span><strong>A</strong></div>
+          <div><span>Updated</span><strong id="current-year">2026</strong></div>
+        </div>
+      </div>
+      <p class="footer-note">Built with HTML, CSS &amp; JS — edit js/projects-data.js to add new projects.</p>
+    </div>
   </footer>
 
+  <script src="js/projects-data.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
