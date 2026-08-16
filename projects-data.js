@@ -27,10 +27,10 @@ const PROJECTS = [
     date: "2026",
     tag: "AI / Accessibility",
     description:
-      "An AI-powered wearable concept that scans a user's surroundings to flag hazards, read text aloud, and identify objects — all through voice commands, built for blind and low-vision users. Built in 36 hours with a 4-person team; placed 2nd at hackVH and won $400.",
-    stack: ["Python", "Computer Vision", "Voice UI"],
+      "An AI-powered wearable concept that scans a user's surroundings to flag hazards, read text aloud, and identify objects — all through voice commands, built for blind and low-vision users. Built in a 24-hour hackathon with a 4-person team; placed 2nd at hackVH and won $400. The biggest challenge was building working object-recognition software in such a short window — the team ended up building it on top of Gemini's recognition capabilities to hit the deadline.",
+    stack: ["Python", "Gemini API", "Computer Vision", "Voice UI"],
     links: [
-      // { "label": "GitHub", "url": "https://github.com/your-username/vera" },
+      // { "label": "GitHub", "url": "https://github.com/jayeshpatil2010/vera" },
       // { "label": "Demo Video", "url": "https://youtube.com/..." }
     ],
     featured: true,
@@ -43,7 +43,7 @@ const PROJECTS = [
       "A prediction model trained on over 12,000 data points from professional soccer matches spanning the last 5–6 seasons, reaching roughly 80% accuracy against recent real-world results. Built for a STEAM showcase submission.",
     stack: ["Python", "Data Analysis", "Statistics"],
     links: [
-      // { "label": "GitHub", "url": "https://github.com/your-username/soccer-predictor" }
+      { "label": "GitHub", "url": "https://jayeshpatil2010.github.io/Soccer-CS-final-project/" }
     ],
     featured: true,
   },
